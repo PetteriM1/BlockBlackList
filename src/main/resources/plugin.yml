@@ -1,6 +1,14 @@
 name: BlockBlackList
 main: BlockBlackList.BlockBlackList
-version: "1.0"
+version: "${pom.version}"
 api: ["1.0.0"]
 author: PetteriM1
 description: Simple block blacklist plugin for Nukkit
+
+permissions:
+  bbl.bypass:
+    description: "Bypass all banned blocks"
+    default: op
+  bbl.bypass.id.*:
+    description: "Bypass a banned block"
+    default: op
